@@ -1,0 +1,147 @@
+.create-product-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-product-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.create-product-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-product-form form div {
+    margin-bottom: 15px;
+}
+
+.create-product-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.create-product-form input,
+.create-product-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.create-product-form input:focus,
+.create-product-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.create-product-form button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-product-form button:hover {
+    background-color: #0056b3;
+}
+
+.create-product-form p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.create-product-form p[style*='color: red'] {
+    color: #ff0000;
+}
+
+.create-product-form p[style*='color: green'] {
+    color: #28a745;
+}
+
+
+
+.product-table {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.product-table td {
+    background-color: #fff;
+}
+
+.product-table img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail h1 {
+    margin-bottom: 20px;
+}
+
+.product-detail p {
+    margin-bottom: 10px;
+}
+
+.product-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
