@@ -23,12 +23,7 @@ const FetchProducts = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products?populate=*",
-          {
-            headers: {
-              Authorization: `Bearer ${jwtToken}`,
-            },
-          }
+          "https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products?populate=*"
         );
 
         setProducts(response.data.data);
