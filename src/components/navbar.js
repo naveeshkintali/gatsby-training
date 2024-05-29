@@ -27,7 +27,7 @@ function navbar() {
           <Link to="/product/createP">Create Product</Link>
         </li>
 
-        <li>
+        {/* <li>
           {isLoggedIn ? (
             <Link to="/logout">
               <a href="logout">Logout</a>
@@ -44,7 +44,7 @@ function navbar() {
               <a href="signup">SignUp</a>
             </Link>
           )}
-        </li>
+        </li> */}
       </ul>
     </div>
   );
