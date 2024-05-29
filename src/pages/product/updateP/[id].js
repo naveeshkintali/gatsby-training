@@ -7,8 +7,15 @@ const UpdateProduct = ({ params }) => {
   const [product, setProduct] = useState(null);
   const [error, setError] = useState("");
   const { register, handleSubmit, reset } = useForm();
-  const jwtToken = localStorage.getItem("jwt");
+  // const jwtToken = localStorage.getItem("jwt");
 
+  let jwtToken;
+  if (typeof window !== "undefined") {
+    jwtToken = localStorage.getItem("jwt");
+    if (!jwtToken) {
+      navigate("/");
+    }
+  }
   if (!jwtToken) {
     navigate("/");
   }

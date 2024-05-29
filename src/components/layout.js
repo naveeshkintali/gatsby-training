@@ -5,7 +5,14 @@ import axios from "axios";
 const Layout = ({ children }) => {
   const [authenticated, setAuthenticated] = useState();
   useEffect(() => {
-    const jwtToken = localStorage.getItem("jwt");
+    // const jwtToken = localStorage.getItem("jwt");
+    let jwtToken;
+    if (typeof window !== "undefined") {
+      jwtToken = localStorage.getItem("jwt");
+      if (!jwtToken) {
+        navigate("/");
+      }
+    }
     if (!jwtToken) {
       navigate("/");
     } else {
