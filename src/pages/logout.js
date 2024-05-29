@@ -2,7 +2,7 @@ import { navigate } from "gatsby";
 import React from "react";
 
 function logout() {
-  localStorage.removeItem("jwt");
+  // localStorage.removeItem("jwt");
   navigate("/login");
   return <div></div>;
 }
