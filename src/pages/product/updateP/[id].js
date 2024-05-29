@@ -21,7 +21,7 @@ const UpdateProduct = ({ params }) => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:1337/api/products/${params.id}`,
+          `https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products/${params.id}`,
           {
             headers: {
               Authorization: `Bearer ${jwtToken}`,
@@ -41,7 +41,7 @@ const UpdateProduct = ({ params }) => {
   const onSubmit = async (data) => {
     try {
       await axios.put(
-        `http://localhost:1337/api/products/${params.id}`,
+        `https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products/${params.id}`,
         {
           data: data,
         },

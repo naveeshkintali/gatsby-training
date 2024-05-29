@@ -47,12 +47,7 @@ const FetchProducts = () => {
 
     try {
       await axios.delete(
-        `https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products/${productId}`,
-        {
-          headers: {
-            Authorization: `Bearer ${jwtToken}`,
-          },
-        }
+        `https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products/${productId}`
       );
 
       setProducts(products.filter((product) => product.id !== productId));

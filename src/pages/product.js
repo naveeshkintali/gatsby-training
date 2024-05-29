@@ -6,7 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 export default function SignupPage() {
   const onSubmit = async (data) => {
     console.log(data);
-    const url = "http://localhost:1337/api/products/";
+    const url =
+      "https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products/";
     try {
       const response = await axios.post(url, {
         data: {

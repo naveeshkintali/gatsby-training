@@ -10,7 +10,7 @@ const ProductDetail = ({ params }) => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:1337/api/products/${params.id}?populate=*`
+          `https://celebrated-oasis-4ee7b2b6a3.strapiapp.com/api/products/${params.id}?populate=*`
         );
         setProduct(response.data.data);
       } catch (error) {
@@ -37,7 +37,7 @@ const ProductDetail = ({ params }) => {
       <p>Description: {product.attributes.Description}</p>
       {product.attributes.image.data && (
         <img
-          src={`http://localhost:1337${product.attributes.image.data.attributes.url}`}
+          src={`${product.attributes.image.data.attributes.url}`}
           alt={product.attributes.p_name}
           width="300"
         />
