@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
 function navbar() {
-  const isLoggedIn = !!localStorage.getItem("jwt");
+  let jwtToken;
+  if (typeof window !== "undefined") {
+    jwtToken = localStorage.getItem("jwt");
+    if (!jwtToken) {
+      navigate("/");
+    }
+  }
+
+  // const isLoggedIn = !!localStorage.getItem("jwt");
   return (
     <div>
       <ul>
