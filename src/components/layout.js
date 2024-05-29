@@ -11,23 +11,20 @@ const Layout = ({ children }) => {
       jwtToken = localStorage.getItem("jwt");
       if (!jwtToken) {
         navigate("/");
+      } else {
+        axios
+          .get("http://localhost:1337/api/users/me", {
+            headers: {
+              Authorization: `Bearer  ${jwtToken}`,
+            },
+          })
+          .then((response) => {
+            setAuthenticated(true);
+          })
+          .catch((error) => {
+            console.log(error.messgae);
+          });
       }
-    }
-    if (!jwtToken) {
-      navigate("/");
-    } else {
-      axios
-        .get("http://localhost:1337/api/users/me", {
-          headers: {
-            Authorization: `Bearer  ${jwtToken}`,
-          },
-        })
-        .then((response) => {
-          setAuthenticated(true);
-        })
-        .catch((error) => {
-          console.log(error.messgae);
-        });
     }
   });
   return (

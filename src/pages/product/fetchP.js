@@ -18,9 +18,6 @@ const FetchProducts = () => {
       navigate("/");
     }
   }
-  if (!jwtToken) {
-    navigate("/");
-  }
 
   useEffect(() => {
     const fetchProducts = async () => {
