@@ -3,7 +3,7 @@ import React from "react";
 
 function logout() {
   // localStorage.removeItem("jwt");
-  navigate("/login");
+  // navigate("/login");
   return <div></div>;
 }
 
